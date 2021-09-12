@@ -20,9 +20,12 @@ public class Aptitud {
             if(a.getFraseDes().charAt(i) == frase.charAt(i)){
                 aptitud+=1;
             }
-            if( a.getFraseDes().indexOf(frase.charAt(i)) != -1 ){
-                aptitud += 1;
+            if(frase.indexOf(a.getFraseDes().charAt(i)) != -1){
+                aptitud+=1;
             }
+            /*if( a.getFraseDes().indexOf(frase.charAt(i)) != -1 ){
+                aptitud += 1;
+            }*/
             
         }
         
